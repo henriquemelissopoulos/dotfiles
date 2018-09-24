@@ -1,0 +1,33 @@
+#!/bin/bash
+
+code --install-extension Poorchop.theme-darktooth
+code --install-extension SolarLiner.linux-themes
+code --install-extension TsumiNa.Seti-theme
+code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension bialikover.theme-seti
+code --install-extension christian-kohler.path-intellisense
+code --install-extension dbaeumer.vscode-eslint
+code --install-extension donjayamanne.githistory
+code --install-extension eamodio.gitlens
+code --install-extension emmanuelbeziat.vscode-great-icons
+code --install-extension Equinusocio.vsc-material-theme
+code --install-extension esbenp.prettier-vscode
+code --install-extension file-icons.file-icons
+code --install-extension formulahendry.auto-close-tag
+code --install-extension formulahendry.auto-complete-tag
+code --install-extension formulahendry.auto-rename-tag
+code --install-extension gerane.Theme-FlatlandMonokai
+code --install-extension hbenl.vscode-firefox-debug
+code --install-extension idleberg.hopscotch
+code --install-extension marioterron.one-dark-bimbo
+code --install-extension monokai.theme-monokai-pro-vscode
+code --install-extension pawelgrzybek.bimbo-theme
+code --install-extension PKief.material-icon-theme
+code --install-extension qinjia.seti-icons
+code --install-extension richardmarks.vscode-perfect-dark-color-theme
+code --install-extension robertohuertasm.vscode-icons
+code --install-extension teabyii.ayu
+code --install-extension tinkertrain.theme-panda
+code --install-extension tnaseem.theme-seti
+code --install-extension yzhang.markdown-all-in-one
+code --install-extension zhuangtongfa.Material-theme

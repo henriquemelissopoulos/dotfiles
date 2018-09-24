@@ -1,0 +1,19 @@
+{
+    "window.menuBarVisibility": "toggle",
+    "workbench.colorTheme": "Bimbo Theme",
+    "editor.fontSize": 16,
+    "workbench.iconTheme": "file-icons",
+    "eslint.autoFixOnSave": true,
+    "files.autoSave": "onFocusChange",
+    "diffEditor.ignoreTrimWhitespace": true,
+    "editor.multiCursorModifier": "alt",
+    "gitlens.advanced.messages": {
+        "suppressShowKeyBindingsNotice": true
+    },
+    "git.confirmSync": false,
+    "workbench.activityBar.visible": false,
+    "gitlens.historyExplorer.enabled": false,
+    "editor.renderControlCharacters": true,
+    "editor.renderWhitespace": "all",
+    "workbench.sideBar.location": "left",
+}
