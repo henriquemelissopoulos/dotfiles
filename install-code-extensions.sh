@@ -1,9 +1,7 @@
 #!/bin/bash
 
-code --install-extension Poorchop.theme-darktooth
-code --install-extension SolarLiner.linux-themes
-code --install-extension TsumiNa.Seti-theme
 code --install-extension arcticicestudio.nord-visual-studio-code
+code --install-extension Arjun.swagger-viewer
 code --install-extension bialikover.theme-seti
 code --install-extension christian-kohler.path-intellisense
 code --install-extension dbaeumer.vscode-eslint
@@ -23,11 +21,14 @@ code --install-extension marioterron.one-dark-bimbo
 code --install-extension monokai.theme-monokai-pro-vscode
 code --install-extension pawelgrzybek.bimbo-theme
 code --install-extension PKief.material-icon-theme
+code --install-extension Poorchop.theme-darktooth
 code --install-extension qinjia.seti-icons
 code --install-extension richardmarks.vscode-perfect-dark-color-theme
 code --install-extension robertohuertasm.vscode-icons
+code --install-extension SolarLiner.linux-themes
 code --install-extension teabyii.ayu
 code --install-extension tinkertrain.theme-panda
 code --install-extension tnaseem.theme-seti
+code --install-extension TsumiNa.Seti-theme
 code --install-extension yzhang.markdown-all-in-one
 code --install-extension zhuangtongfa.Material-theme
