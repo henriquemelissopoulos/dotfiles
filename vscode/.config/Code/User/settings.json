@@ -16,4 +16,5 @@
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "all",
     "workbench.sideBar.location": "left",
+    "workbench.startupEditor": "newUntitledFile",
 }
