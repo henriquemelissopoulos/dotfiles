@@ -29,3 +29,10 @@ List extensions with install command
 ```
 code --list-extensions | xargs -L1 echo code --install-extension
 ```
+
+### misc
+
+Control Time Settings
+```
+sudo pacman -S timeset
+```
