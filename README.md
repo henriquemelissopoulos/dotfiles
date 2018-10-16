@@ -44,6 +44,12 @@ sudo pacman -S rofi
 sudo pacman -S stow
 ```
 
+## flameshot
+Screenshot software (i3 config dependency)
+```
+yay -S flameshot
+```
+
 ## vscode
 ```
 yay -S visual-studio-code-bin

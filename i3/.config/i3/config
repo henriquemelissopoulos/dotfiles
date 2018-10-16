@@ -3,6 +3,7 @@
 
 # Set mod key (Mod1=<Alt>, Mod4=<Super>)
 set $mod Mod4
+set $alt Mod1
 
 # Set keys
 set $up k
@@ -71,15 +72,13 @@ bindsym $mod+F5 exec terminal -e 'mocp'
 bindsym $mod+t exec --no-startup-id pkill compton
 bindsym $mod+Ctrl+t exec --no-startup-id compton -b
 bindsym $mod+Shift+d --release exec "killall dunst; exec notify-send 'restart dunst'"
-bindsym Print exec --no-startup-id i3-scrot
-bindsym $mod+Print --release exec --no-startup-id i3-scrot -w
-bindsym $mod+F11 --release exec --no-startup-id i3-scrot -w
-bindsym $mod+Shift+Print --release exec --no-startup-id i3-scrot -s
-bindsym $mod+Shift+F11 --release exec --no-startup-id i3-scrot -s
-# bindsym $mod+Shift+F1 gexec xdg-open /usr/share/doc/manjaro/i3_help.pdf
 bindsym $mod+Ctrl+x --release exec --no-startup-id xkill
 
-# focus_follows_mouse no
+# Screenshot Full
+bindsym Print --release exec flameshot full -p ~/Pictures/
+bindsym $mod+$alt+Print --release exec --no-startup-id i3-scrot -w
+bindsym $mod+Print --release exec --no-startup-id flameshot gui -p ~/Pictures/
+bindsym $mod+F11 --release exec --no-startup-id flameshot gui -p ~/Pictures/
 
 # change focus
 bindsym $mod+$left focus left
