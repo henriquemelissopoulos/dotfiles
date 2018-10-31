@@ -432,13 +432,16 @@ set $displayMode "Set display mode [b]oth [n]otebook [h]dmi"
 bindsym $mod+F8 mode $displayMode
 mode $displayMode {
     bindsym b exec "\
-                ~/.screenlayout/both.sh && \
+                ~/.screenlayout/dual-monitor.sh && \
+                nitrogen --restore"; \
                 mode "default"
     bindsym n exec "\
-                ~/.screenlayout/only-notebook.sh && \
+                ~/.screenlayout/single-1920-1080.sh && \
+                nitrogen --restore"; \
                 mode "default"
     bindsym h exec "\
-                ~/.screenlayout/only-hdmi.sh && \
+                ~/.screenlayout/dp1-1920-1080.sh && \
+                nitrogen --restore"; \
                 mode "default"
 
     bindsym Return mode "default"
