@@ -1,6 +1,6 @@
 {
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Bimbo Theme",
+    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
     "editor.fontSize": 16,
     "workbench.iconTheme": "file-icons",
     "eslint.autoFixOnSave": true,
@@ -17,4 +17,11 @@
     "editor.renderWhitespace": "all",
     "workbench.sideBar.location": "left",
     "workbench.startupEditor": "newUntitledFile",
+    "gitlens.views.fileHistory.enabled": false,
+    "gitlens.views.lineHistory.enabled": false,
+    "window.restoreWindows": "all",
+    "window.titleBarStyle": "native",
+    "window.zoomLevel": 0,
+    "editor.fontLigatures": true,
+    "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
 }

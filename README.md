@@ -71,3 +71,9 @@ Control Time Settings
 ```
 sudo pacman -S timeset
 ```
+
+## Fira Code
+Monospaced font with programming ligatures.
+```
+yay -S otf-fira-code
+```
