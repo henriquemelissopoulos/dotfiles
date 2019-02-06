@@ -428,13 +428,17 @@ mode "$mode_gaps_outer" {
 
 
 # DisplayMode
-set $displayMode "Set display mode: [b]oth [n]otebook [h]dmi [c]onfig"
+set $displayMode "Set display mode: [c]onfig [t]op [r]ight [n]otebook [h]dmi"
 bindsym $mod+F8 mode $displayMode
 mode $displayMode {
     bindsym c exec "arandr" \
                 mode "default"
-    bindsym b exec "\
+    bindsym t exec "\
                 ~/.screenlayout/dual-monitor.sh && \
+                nitrogen --restore" \
+                mode "default"
+    bindsym r exec "\
+                ~/.screenlayout/dual-monitor-right.sh && \
                 nitrogen --restore" \
                 mode "default"
     bindsym n exec "\
