@@ -241,7 +241,7 @@ bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 bindsym $mod+0 mode "$mode_system"
 set $mode_system (l)ock, (e)xit, switch_(u)ser, (s)uspend, (h)ibernate, (r)eboot, (Shift+s)hutdown
 mode "$mode_system" {
-    bindsym l exec --no-startup-id i3exit lock, mode "default"
+    bindsym l exec --no-startup-id xscreensaver-command --lock, mode "default"
     bindsym s exec --no-startup-id i3exit suspend, mode "default"
     bindsym u exec --no-startup-id i3exit switch_user, mode "default"
     bindsym e exec --no-startup-id i3exit logout, mode "default"
@@ -279,7 +279,7 @@ mode "resize" {
 }
 
 # Lock screen
-bindsym $mod+9 exec --no-startup-id blurlock
+bindsym $mod+9 exec --no-startup-id xscreensaver-command --lock
 
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
@@ -292,7 +292,10 @@ exec --no-startup-id pamac-tray
 # exec_always --no-startup-id sbxkb
 exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
-exec --no-startup-id xautolock -time 10 -corners -000 -locker blurlock
+# exec --no-startup-id xautolock -time 10 -corners -000 -locker blurlock
+# bindsym $mod+9 exec --no-startup-id xscreensaver-command --lock
+exec --no-startup-id xautolock -time 10 -corners -000 -locker xscreensaver-command --lock
+# exec --no-startup-id xscreensaver -no-splash &
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 

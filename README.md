@@ -50,6 +50,12 @@ Screenshot software (i3 config dependency)
 yay -S flameshot
 ```
 
+## xscreensaver
+Screen saver and locker for the X Window System
+```
+yay -S xscreensaver
+```
+
 ## vscode
 ```
 yay -S visual-studio-code-bin
