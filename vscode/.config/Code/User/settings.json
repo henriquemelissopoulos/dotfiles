@@ -1,6 +1,6 @@
 {
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Monokai Pro (Filter Spectrum)",
+    "workbench.colorTheme": "One Dark Pro",
     "editor.fontSize": 16,
     "workbench.iconTheme": "file-icons",
     "eslint.autoFixOnSave": true,
@@ -24,4 +24,5 @@
     "window.zoomLevel": 0,
     "editor.fontLigatures": true,
     "editor.fontFamily": "'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
+    "editor.mouseWheelZoom": true,
 }
