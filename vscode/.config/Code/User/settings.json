@@ -1,6 +1,6 @@
 {
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "One Dark Pro",
+    "workbench.colorTheme": "Owlet (Charcoal)",
     "editor.fontSize": 16,
     "workbench.iconTheme": "file-icons",
     "eslint.autoFixOnSave": true,
@@ -15,7 +15,7 @@
     "gitlens.historyExplorer.enabled": false,
     "editor.renderControlCharacters": true,
     "editor.renderWhitespace": "all",
-    "workbench.sideBar.location": "left",
+    "workbench.sideBar.location": "right",
     "workbench.startupEditor": "newUntitledFile",
     "gitlens.views.fileHistory.enabled": false,
     "gitlens.views.lineHistory.enabled": false,
@@ -25,4 +25,7 @@
     "editor.fontLigatures": true,
     "editor.fontFamily": "'FiraSpace Code', 'Fira Code', 'Droid Sans Mono', 'monospace', monospace, 'Droid Sans Fallback'",
     "editor.mouseWheelZoom": true,
+    "workbench.statusBar.feedback.visible": false,
+    "material-icon-theme.activeIconPack": "react",
+    "git-graph.showStatusBarItem": false,
 }
