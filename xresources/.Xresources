@@ -6,7 +6,7 @@ Xft.autohint:  false
 Xft.hintstyle: hintslight
 Xft.lcdfilter: lcddefault
 
-XTerm*background:        #222D31
+XTerm*background:        #000000
 XTerm*foreground:        #d8d8d8
 XTerm*pointerColor:      #1ABB9B
 XTerm*faceName:          Fixed
@@ -14,7 +14,7 @@ XTerm*faceSize:          11
 XTerm*reverseVideo:      on
 XTerm*selectToClipboard: true
 
-*background:                      #222D31
+*background:                      #000000
 *foreground:                      #d8d8d8
 *fading:                          8
 *fadeColor:                       black
@@ -23,7 +23,7 @@ XTerm*selectToClipboard: true
 *pointerColorForeground:          #16A085
 
 !! black dark/light
-*color0:                          #222D31
+*color0:                          #000000
 *color8:                          #585858
 
 !! red dark/light
@@ -65,7 +65,7 @@ URxvt.font:                       9x15,xft:TerminessTTFNerdFontMono
 !! terminus names see end of file!
 
 URxvt.depth:                      32
-URxvt.background:                 [100]#222D31
+URxvt.background:                 [100]#000000
 URxvt*scrollBar:                  false
 URxvt*mouseWheelScrollPage:       false
 URxvt*cursorBlink:                true
