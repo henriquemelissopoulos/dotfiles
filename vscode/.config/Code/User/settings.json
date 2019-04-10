@@ -1,6 +1,6 @@
 {
     "window.menuBarVisibility": "toggle",
-    "workbench.colorTheme": "Owlet (Charcoal)",
+    "workbench.colorTheme": "Material Theme Darker",
     "editor.fontSize": 16,
     "workbench.iconTheme": "file-icons",
     "eslint.autoFixOnSave": true,
@@ -28,4 +28,9 @@
     "workbench.statusBar.feedback.visible": false,
     "material-icon-theme.activeIconPack": "react",
     "git-graph.showStatusBarItem": false,
+    "explorer.confirmDragAndDrop": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
+    "git.autofetch": true,
+    "explorer.autoReveal": false,
+    "workbench.editor.enablePreview": false,
 }
