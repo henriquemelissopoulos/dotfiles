@@ -17,6 +17,13 @@ sudo pacman -S yay
 
 For colored output, uncomment the `Color` line in `/etc/pacman.conf`
 
+
+## Antigen
+Antigen is a small set of functions that help you easily manage your shell (zsh) plugins.
+```
+yay -S antigen-git
+```
+
 ## npm & node
 First install `nvm` from `AUR`
 ```
