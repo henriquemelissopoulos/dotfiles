@@ -94,12 +94,14 @@ export YAOURT_COLORS="nb=1:pkg=1:ver=1;32:lver=1;45:installed=1;42:grp=1;34:od=1
 antigen use oh-my-zsh
 
 antigen bundle git
+antigen bundle git-flow
 antigen bundle zsh-history-substring-search
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
 antigen bundle buonomo/yarn-completion
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle zsh-users/zsh-completions
+antigen bundle compleat
 
 # Spaceship
 antigen theme denysdovhan/spaceship-prompt
