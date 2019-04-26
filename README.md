@@ -17,6 +17,11 @@ sudo pacman -S yay
 
 For colored output, uncomment the `Color` line in `/etc/pacman.conf`
 
+## Kitty
+A cross-platform, fast, feature full, GPU based terminal emulator 
+```
+yay -S kitty
+```
 
 ## Antigen
 Antigen is a small set of functions that help you easily manage your shell (zsh) plugins.
