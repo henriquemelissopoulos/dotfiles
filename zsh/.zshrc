@@ -102,6 +102,7 @@ antigen bundle buonomo/yarn-completion
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle zsh-users/zsh-completions
 antigen bundle compleat
+antigen bundle agkozak/zsh-z
 
 # Spaceship
 antigen theme denysdovhan/spaceship-prompt
@@ -151,6 +152,15 @@ SPACESHIP_GIT_SYMBOL=''
 SPACESHIP_PACKAGE_PREFIX=''
 SPACESHIP_CHAR_SYMBOL='> '
 SPACESHIP_TIME_SHOW=true
+
+prompt_firebase() {
+  local fb_project=$(grep \"$(pwd)\" ~/.config/configstore/firebase-tools.json | cut -d" " -f2)
+  if [[ -n $fb_project ]]; then
+    prompt_segment red black $fb_project
+    echo [$fb_project]
+  fi
+}
+# export PS1="\$(prompt_firebase)"$PS1
 
 # Tell Antigen that you're done.
 antigen apply
