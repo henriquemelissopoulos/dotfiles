@@ -117,7 +117,6 @@ SPACESHIP_PROMPT_ORDER=(
   hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
   firebase      # Firebase section
-  node          # Node.js section
   ruby          # Ruby section
   elixir        # Elixir section
   xcode         # Xcode section
@@ -146,7 +145,10 @@ SPACESHIP_PROMPT_ORDER=(
 )
 
 # Spaceship Right Config
-SPACESHIP_RPROMPT_ORDER=(time)
+SPACESHIP_RPROMPT_ORDER=(
+  node          # Node.js section
+  time          # Current time section
+)
 
 SPACESHIP_PROMPT_DEFAULT_PREFIX=''
 SPACESHIP_GIT_PREFIX='' #  
@@ -156,6 +158,7 @@ SPACESHIP_GIT_STATUS_SUFFIX=''
 SPACESHIP_PACKAGE_PREFIX=''
 SPACESHIP_CHAR_SYMBOL='❯ '
 SPACESHIP_TIME_SHOW=true
+SPACESHIP_TIME_PREFIX=''
 SPACESHIP_FIREBASE_SYMBOL=''
 
 # Tell Antigen that you're done.
