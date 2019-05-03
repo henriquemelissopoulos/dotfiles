@@ -153,14 +153,5 @@ SPACESHIP_PACKAGE_PREFIX=''
 SPACESHIP_CHAR_SYMBOL='> '
 SPACESHIP_TIME_SHOW=true
 
-prompt_firebase() {
-  local fb_project=$(grep \"$(pwd)\" ~/.config/configstore/firebase-tools.json | cut -d" " -f2)
-  if [[ -n $fb_project ]]; then
-    prompt_segment red black $fb_project
-    echo [$fb_project]
-  fi
-}
-# export PS1="\$(prompt_firebase)"$PS1
-
 # Tell Antigen that you're done.
 antigen apply
