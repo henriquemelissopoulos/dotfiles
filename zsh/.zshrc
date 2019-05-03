@@ -103,6 +103,7 @@ antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle zsh-users/zsh-completions
 antigen bundle compleat
 antigen bundle agkozak/zsh-z
+antigen bundle $HOME/.oh-my-zsh/custom/plugins # add custom oh-my-zsh plugins
 
 # Spaceship
 antigen theme denysdovhan/spaceship-prompt
@@ -115,6 +116,7 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
+  firebase      # Firebase section
   node          # Node.js section
   ruby          # Ruby section
   elixir        # Elixir section
@@ -147,13 +149,14 @@ SPACESHIP_PROMPT_ORDER=(
 SPACESHIP_RPROMPT_ORDER=(time)
 
 SPACESHIP_PROMPT_DEFAULT_PREFIX=''
-SPACESHIP_GIT_PREFIX=''
+SPACESHIP_GIT_PREFIX='' #  
 SPACESHIP_GIT_SYMBOL=''
 SPACESHIP_GIT_STATUS_PREFIX=''
 SPACESHIP_GIT_STATUS_SUFFIX=''
 SPACESHIP_PACKAGE_PREFIX=''
 SPACESHIP_CHAR_SYMBOL='❯ '
 SPACESHIP_TIME_SHOW=true
+SPACESHIP_FIREBASE_SYMBOL=''
 
 # Tell Antigen that you're done.
 antigen apply
