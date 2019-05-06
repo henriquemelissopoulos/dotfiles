@@ -333,30 +333,30 @@ set_from_resource $term_color15    color15
 
 # Start i3bar to display a workspace bar (plus the system information i3status if available)
 bar {
-	i3bar_command i3bar
-	status_command i3status
-	position top
+        i3bar_command i3bar
+        status_command i3status
+        position top
 
 ## please set your primary output first. Example: 'xrandr --output eDP1 --primary'
 #	tray_output primary
 #	tray_output eDP1
 
-	bindsym button4 nop
-	bindsym button5 nop
-#   font xft:URWGothic-Book 11
-	strip_workspace_numbers yes
+        bindsym button4 nop
+        bindsym button5 nop
+        font xft:FuraCode Nerd Font 11
+        strip_workspace_numbers yes
 
-    colors {
-        background #000000
-        statusline #F9FAF9
-        separator  #000000
+        colors {
+                background #000000
+                statusline #F9FAF9
+                separator  #000000
 
-#                          border  backgr. text
-        focused_workspace  #000000 #000000 #FFFFFF
-        active_workspace   #000000 #000000 #333333
-        inactive_workspace #000000 #000000 #333333
-        binding_mode       #000000 #000000 #16a085
-        urgent_workspace   #16a085 #000000 #16a085
+#                                  border    backgr.   text
+                focused_workspace  #000000 #000000 #FFFFFF
+                active_workspace   #000000 #000000 #555555
+                inactive_workspace #000000 #000000 #555555
+                binding_mode       #000000 #000000 #16a085
+                urgent_workspace   #16a085 #000000 #16a085
     }
 }
 
