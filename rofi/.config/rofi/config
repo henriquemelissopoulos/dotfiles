@@ -1,1 +1,8 @@
-rofi.theme: ~/.config/rofi/themes/hipgnose-black.rasi
+rofi.theme:         ~/.config/rofi/themes/hipgnose-black.rasi
+rofi.lines:         12
+rofi.combi-modi:    run,drun
+rofi.sidebar-mode:  true
+rofi.columns:       3
+rofi.modi:          combi,run,drun,window
+rofi.show-icons:    true
+rofi.font:          FuraCode Nerd Font 11
