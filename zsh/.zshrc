@@ -95,9 +95,9 @@ antigen use oh-my-zsh
 
 antigen bundle git
 antigen bundle git-flow
-antigen bundle zsh-history-substring-search
 antigen bundle zdharma/fast-syntax-highlighting
 antigen bundle zsh-users/zsh-autosuggestions
+antigen bundle zsh-users/zsh-history-substring-search
 antigen bundle buonomo/yarn-completion
 antigen bundle lukechilds/zsh-better-npm-completion
 antigen bundle zsh-users/zsh-completions
@@ -163,3 +163,8 @@ SPACESHIP_FIREBASE_SYMBOL=''
 
 # Tell Antigen that you're done.
 antigen apply
+
+# History Substring Search Config, need to be defined after `antigen apply`
+bindkey '^[[1;2A' history-substring-search-up # or ^[OA
+bindkey '^[[1;2B' history-substring-search-down # or ^[OB
+HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
