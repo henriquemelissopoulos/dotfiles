@@ -101,3 +101,21 @@ Monospaced font with programming ligatures.
 ```
 yay -S otf-fira-code
 ```
+
+# Problems
+## Electron apps crashing randomly - DRI3 issues
+To solve I had to write
+
+```
+Section "Device"
+    Identifier "Intel Graphics"
+    Driver "intel"
+    Option "DRI" "2"
+EndSection
+```
+
+in `/etc/X11/xorg.conf.d/20-intel.conf`
+
+https://unix.stackexchange.com/questions/524205/help-chromium-display-frozen-but-the-app-keeps-working
+
+https://wiki.archlinux.org/index.php/Intel_graphics#DRI3_issues
