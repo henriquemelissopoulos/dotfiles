@@ -102,7 +102,7 @@ Monospaced font with programming ligatures.
 yay -S otf-fira-code
 ```
 
-# Problems
+# Issues
 ## Electron apps crashing randomly - DRI3 issues
 To solve I had to write
 
@@ -124,3 +124,9 @@ https://wiki.archlinux.org/index.php/Intel_graphics#DRI3_issues
 To solve it, I executed `install_pulse`
 
 https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues#w_you-may-need-to-install-the-required-pulseaudio-software
+
+
+## Add Git Credentials to Keyring/Libsecret
+Install the `libsecret` package. (Already installed in Manjaro)
+
+```git config --global credential.helper /usr/lib/git-core/git-credential-libsecret```
