@@ -117,5 +117,10 @@ EndSection
 in `/etc/X11/xorg.conf.d/20-intel.conf`
 
 https://unix.stackexchange.com/questions/524205/help-chromium-display-frozen-but-the-app-keeps-working
-
 https://wiki.archlinux.org/index.php/Intel_graphics#DRI3_issues
+
+
+## Meet/Hangouts/sites without sound and microphone on Firefox
+To solve it, I executed `install_pulse`
+
+https://support.mozilla.org/en-US/kb/fix-common-audio-and-video-issues#w_you-may-need-to-install-the-required-pulseaudio-software
