@@ -14,7 +14,7 @@ export PATH=/usr/local/share/npm/bin:$PATH
 export N_PREFIX=$HOME/.n
 
 # NVM Init config
-source /usr/share/nvm/init-nvm.sh
+# source /usr/share/nvm/init-nvm.sh
 
 # source /home/h/.bash_profile
 # source $HOME/.bashrc
@@ -116,7 +116,7 @@ SPACESHIP_PROMPT_ORDER=(
   git           # Git section (git_branch + git_status)
   hg            # Mercurial section (hg_branch  + hg_status)
   package       # Package version
-  firebase      # Firebase section
+# firebase      # Firebase section
   ruby          # Ruby section
   elixir        # Elixir section
   xcode         # Xcode section
@@ -133,7 +133,7 @@ SPACESHIP_PROMPT_ORDER=(
   pyenv         # Pyenv section
   dotnet        # .NET section
   ember         # Ember.js section
-  kubecontext   # Kubectl context section
+# kubecontext   # Kubectl context section
   terraform     # Terraform workspace section
   exec_time     # Execution time
   line_sep      # Line break
