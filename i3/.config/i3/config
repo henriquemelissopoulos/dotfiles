@@ -14,6 +14,11 @@ set $left h
 # set default desktop layout (default is tiling)
 # workspace_layout tabbed <stacking|tabbed>
 
+
+# Force screen resolution
+# exec --no-startup-id ~/.screenlayout/single-1920-1080.sh
+exec --no-startup-id autorandr --change
+
 # Configure border style <normal|1pixel|pixel xx|none|pixel>
 new_window pixel 1
 new_float normal
@@ -286,18 +291,20 @@ bindsym $mod+9 exec --no-startup-id xscreensaver-command --lock
 # Autostart applications
 exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec --no-startup-id nitrogen --restore; sleep 1; compton -b
-#exec --no-startup-id manjaro-hello
+# exec --no-startup-id manjaro-hello
 exec --no-startup-id nm-applet
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id pamac-tray
-# exec --no-startup-id blueman-applet
+exec --no-startup-id blueman-applet
 # exec_always --no-startup-id sbxkb
-exec --no-startup-id start_conky_maia
+# exec --no-startup-id start_conky_maia
 # exec --no-startup-id start_conky_green
 # exec --no-startup-id xautolock -time 10 -corners -000 -locker blurlock
 # bindsym $mod+9 exec --no-startup-id xscreensaver-command --lock
+# Start xscreensaver server and configure xautolock with xscreensaver
+exec --no-startup-id xscreensaver -no-splash &
 exec --no-startup-id xautolock -time 10 -corners -000 -locker xscreensaver-command --lock
-# exec --no-startup-id xscreensaver -no-splash &
+
 exec_always --no-startup-id ff-theme-util
 exec_always --no-startup-id fix_xcursor
 
@@ -433,10 +440,13 @@ mode "$mode_gaps_outer" {
 
 
 # DisplayMode
-set $displayMode "Set display mode: [c]onfig [t]op [r]ight [n]otebook [h]dmi"
+set $displayMode "Set display mode: [t]op, [r]ight, [n]otebook, [f]ull, [h]dmi, [a]uto, [c]onfig"
 bindsym $mod+F8 mode $displayMode
 mode $displayMode {
     bindsym c exec "arandr" \
+                mode "default"
+    bindsym a exec "autorandr --change && \
+                nitrogen --restore" \
                 mode "default"
     bindsym t exec "\
                 ~/.screenlayout/dual-monitor.sh && \
@@ -448,6 +458,10 @@ mode $displayMode {
                 mode "default"
     bindsym n exec "\
                 ~/.screenlayout/single-1920-1080.sh && \
+                nitrogen --restore" \
+                mode "default"
+    bindsym f exec "\
+                ~/.screenlayout/single-3840x2160.sh && \
                 nitrogen --restore" \
                 mode "default"
     bindsym h exec "\

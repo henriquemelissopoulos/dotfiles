@@ -17,16 +17,16 @@ sudo pacman -S yay
 
 For colored output, uncomment the `Color` line in `/etc/pacman.conf`
 
+## Autorandr
+Auto-detect connected display hardware and load appropiate X11 setup using xrandr
+```
+yay -S autorandr
+```
+
 ## Alacritty
 Alacritty is the fastest GPU-Accelerated terminal emulator in existence.
 ```
 yay -S alacritty
-```
-
-## Kitty
-A cross-platform, fast, feature full, GPU based terminal emulator 
-```
-yay -S kitty
 ```
 
 ## Antigen
