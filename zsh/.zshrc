@@ -13,6 +13,9 @@ export PATH=/usr/local/share/npm/bin:$PATH
 # N node path
 export N_PREFIX=$HOME/.n
 
+# fzf config
+export FZF_DEFAULT_OPTS='--height 20 --layout=reverse --border --history-size=200'
+
 # NVM Init config
 # source /usr/share/nvm/init-nvm.sh
 
@@ -104,6 +107,7 @@ antigen bundle zsh-users/zsh-completions
 antigen bundle compleat
 antigen bundle agkozak/zsh-z
 antigen bundle $HOME/.oh-my-zsh/custom/plugins # add custom oh-my-zsh plugins
+antigen bundle fzf
 
 # Spaceship
 antigen theme denysdovhan/spaceship-prompt
@@ -168,3 +172,4 @@ antigen apply
 bindkey '^[[1;2A' history-substring-search-up # or ^[OA
 bindkey '^[[1;2B' history-substring-search-down # or ^[OB
 HISTORY_SUBSTRING_SEARCH_ENSURE_UNIQUE=1
+bindkey '^[[A' fzf-history-widget

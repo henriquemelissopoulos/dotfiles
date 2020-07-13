@@ -29,7 +29,7 @@ Alacritty is the fastest GPU-Accelerated terminal emulator in existence.
 yay -S alacritty
 ```
 
-## zsh & Antigen
+## zsh, fzf & Antigen
 zsh is a very advanced and programmable command interpreter (shell) for UNIX
 ```
 yay -S zsh
@@ -38,6 +38,11 @@ yay -S zsh
 Make zsh the default shell
 ```
 chsh -s $(which zsh)
+```
+
+`fzf` Command-line fuzzy finder
+```
+yay -S fzf
 ```
 
 Antigen is a small set of functions that help you easily manage your shell (zsh) plugins.
