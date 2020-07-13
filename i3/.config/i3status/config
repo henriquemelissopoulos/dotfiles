@@ -17,6 +17,7 @@ general {
 order += "ethernet _first_"
 order += "wireless _first_"
 order += "cpu_usage"
+order += "memory"
 order += "battery all"
 order += "tztime local"
 
@@ -26,12 +27,18 @@ ethernet _first_ {
 }
 
 wireless _first_ {
-        format_up = "直 %essid  龍 %bitrate"
+        format_up = "直 %essid %bitrate"
         format_down = "" # 睊
 }
 
 cpu_usage {
         format = "  %usage "
+}
+
+memory {
+        format = "%percentage_used "
+        threshold_degraded = "10%"
+        format_degraded = ": %percentage_used"
 }
 
 load {
@@ -57,5 +64,5 @@ battery all {
 }
 
 tztime local {
-        format = "  %d/%m   %H:%M "
+        format = "  %d/%m %H:%M "
 }
