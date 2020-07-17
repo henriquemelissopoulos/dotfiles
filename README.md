@@ -29,6 +29,12 @@ sudo cp autorandr-lid-listener.service /etc/systemd/system/
 sudo systemctl enable --now autorandr-lid-listener.service
 ```
 
+# Polybar
+A fast and easy-to-use status bar
+```bash
+yay -S polybar
+```
+
 ## Alacritty
 Alacritty is the fastest GPU-Accelerated terminal emulator in existence.
 ```bash
